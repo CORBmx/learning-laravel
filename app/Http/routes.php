@@ -12,9 +12,13 @@
 */
 
 Route::get('/posts/create', 'PostsController@create');
+Route::get('/users/create', 'UsersController@create');
 
 Route::get('/posts', 'PostsController@index');
 Route::post('/posts', 'PostsController@store');
+
+Route::get('/users', 'UsersController@index');
+Route::post('/users', 'UsersController@store');
 
 Route::get('/', function () {
     return view('welcome');
