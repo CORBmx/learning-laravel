@@ -24,7 +24,7 @@ class PostsController extends Controller
 
     public function store(Request $request)
     {
-        $user = User::find('Edgardito');
+        //$user = User::find('Edgardito');
 
         $post = Post::create([
             'content' => $request->content,

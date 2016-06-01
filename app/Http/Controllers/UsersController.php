@@ -20,21 +20,8 @@ class UsersController extends Controller
 
     public function create()
     {
+
         return view('users.form');
-    }
-
-    public function store(Request $request)
-    {
-        //$user = User::find(2);
-
-        $user = User::create([
-            'name' => $request->name,
-            'id' => $request->id,
-            'email' => $request->email,
-            'password' => $request->pass,
-        ]);
-
-        return redirect('/users');
     }
 
 }

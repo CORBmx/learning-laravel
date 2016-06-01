@@ -8,8 +8,6 @@
     <h1>lindos pinshes ushers:</h1>
     @foreach($users as $user)
         <h4>Usuario: {{$user->name}}</h4>
-        <p>
-        </p>
     @endforeach
 </body>
 </html>
